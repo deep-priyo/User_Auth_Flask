@@ -33,7 +33,8 @@ Welcome to the **Flask User Authentication and Password Recovery** project! This
 ### Password Recovery
 ![Password Recovery](screenshots/passwordrecovery.png)
 
-
+### Sent Code via mail
+![Email Sent to User](screenshots/code.png)
 
 
 ## 💡 Skills Gained
