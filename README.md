@@ -34,7 +34,7 @@ Welcome to the **Flask User Authentication and Password Recovery** project! This
 ![Password Recovery](screenshots/passwordrecovery.png)
 
 
-> **Note:** Replace the placeholder images above with actual screenshots of your application to give potential users a visual walkthrough.
+
 
 ## 💡 Skills Gained
 
