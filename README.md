@@ -31,13 +31,9 @@ Welcome to the **Flask User Authentication and Password Recovery** project! This
 ![Login Page](screenshots/login_page.png)
 
 ### Password Recovery
-![Password Recovery](screenshots/password_recovery.png)
+![Password Recovery](screenshots/passwordrecovery.png)
+![Password Recovery](screenshots/recovery.png)
 
-### Secret Page (Protected Route)
-![Secret Page](screenshots/secret_page.png)
-
-### File Download
-![File Download](screenshots/file_download.png)
 
 > **Note:** Replace the placeholder images above with actual screenshots of your application to give potential users a visual walkthrough.
 
