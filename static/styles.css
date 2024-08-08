@@ -1,0 +1,286 @@
+
+        * {
+    margin: 0;
+    padding: 0;
+
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.box{
+    width: 400px;
+    height: 450px;
+    border: 2px solid  #625d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.download-link {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: brown; /* Same as your button background color */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em; /* Same as your button font size */
+    font-weight: 700;
+    color: #000; /* Text color, adjust as needed */
+    text-align: center;
+    text-decoration: none; /* Remove underline for links */
+    line-height: 40px; /* Center text vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for button effect */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+.flash-messages {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.flash {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flash.success {
+    background-color: #4CAF50;
+}
+
+.flash.error {
+    background-color: #F44336;
+}
+
+.flash.info {
+    background-color: #2196F3;
+}
+
+.flash.warning {
+    background-color: #FFC107;
+}
+
+/* Show the flash message */
+.flash.show {
+    opacity: 1;
+}
+.download-link:hover {
+    background-color: rosybrown; /* Slightly darker background on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.download-link:active {
+    background-color: rosybrown; /* Even darker background when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Decrease shadow on click */
+}
+
+.download-button {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e6e2e2; /* Same as your button background color */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em; /* Same as your button font size */
+    font-weight: 700;
+    color: #000; /* Text color, adjust as needed */
+    text-align: center;
+    text-decoration: none; /* Remove underline for links */
+    line-height: 40px; /* Center text vertically */
+}
+
+.download-button:hover {
+    background-color: #d3d3d3; /* Slightly darker background on hover */
+}
+
+.download-button:active {
+    background-color: #b0b0b0; /* Even darker background when button is pressed */
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid#fff;
+}
+
+.inputbox label{
+    position: absolute ;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em ;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus ~ label{
+    top: -5px;
+}
+
+input:focus ~ label{
+    top: -5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #000;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e6e2e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.forget{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.forget label:nth-child(2){
+    order: 1;
+}
+
+.forget label{
+    display: flex;
+    align-items: center;
+}
+
+.forget label input[ type="checkbox"]{
+    margin-right: 6px
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+
+/* -- YouTube Link Styles -- */
+
+#source-link {
+  top: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+#yt-link {
+  top: 10px;
+}
+
+#yt-link > i {
+  color: rgb(219, 31, 106);
+
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
+

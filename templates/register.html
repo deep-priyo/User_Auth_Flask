@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+    <div class="box">
+        <form action="{{ url_for('register') }}" method="POST">
+            <br>
+            <h2>Register Now!</h2>
+            <div class="inputbox">
+    <ion-icon name="person-outline"></ion-icon>
+    <input type="text" name="username" id="username" required>
+    <label for="username">Username:</label>
+</div>
+
+
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email:</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="password" id="password" required>
+                <label for="password">Password:</label>
+            </div>
+
+            <button type="submit">Register</button>
+            <div class="register">
+                <p>Have an account? <a href="{{url_for('login')}}">Login Instead</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+</body>
+</html>

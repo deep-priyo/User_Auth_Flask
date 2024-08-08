@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("bg.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+     overflow: hidden; /* Hide overflow for snowflakes */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button {
+    background-color: black;
+}
+
+.register-button {
+    background-color: saddlebrown;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button:focus {
+    outline: none;
+}
+/* Snowflakes styles */
+#snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure it doesn't block interactions */
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    will-change: transform, opacity;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) scale(0.8);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(100vh) scale(1.2);
+        opacity: 0.4;
+    }
+}
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
