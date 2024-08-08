@@ -25,7 +25,7 @@ Welcome to the **Flask User Authentication and Password Recovery** project! This
 ## 📸 Screenshots
 
 ### Registration Page
-![Registration Page](screenshots/registration_page.png)
+![Registration Page](screenshots/registration.png)
 
 ### Login Page
 ![Login Page](screenshots/login_page.png)
