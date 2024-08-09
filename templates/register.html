@@ -15,18 +15,17 @@
             <br>
             <h2>Register Now!</h2>
             <div class="inputbox">
-    <ion-icon name="person-outline"></ion-icon>
-    <input type="text" name="username" id="username" required>
-    <label for="username">Username:</label>
-</div>
-
-
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" name="username" id="username" required>
+                <label for="username">Username:</label>
+            </div>
 
             <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="email" name="email" id="email" required>
                 <label for="email">Email:</label>
             </div>
+
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input type="password" name="password" id="password" required>
@@ -42,5 +41,26 @@
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('.inputbox input');
+
+            inputs.forEach(input => {
+                // Check if input has value on load
+                if (input.value !== '') {
+                    input.classList.add('input-filled');
+                }
+
+                // Add event listeners
+                input.addEventListener('input', () => {
+                    if (input.value !== '') {
+                        input.classList.add('input-filled');
+                    } else {
+                        input.classList.remove('input-filled');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
